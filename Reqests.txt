@@ -1,0 +1,19 @@
+GET http://localhost:8080/port/READ?n=3
+
+GET http://localhost:8080/port/READ?n=6
+
+POST http://localhost:8080/port/WRITE
+Content-Type   application/json
+{
+    "nOut" : -1,
+    "Value": 21,
+    "TransN": 100
+}
+
+POST http://localhost:8080/port/WRITE
+Content-Type   application/json
+{
+    "nOut" : 1,
+    "Value": 21,
+    "TransN": 100
+}
